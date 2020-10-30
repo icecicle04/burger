@@ -1,7 +1,7 @@
 -- Create a new database called 'burgers_db'
 
 CREATE DATABASE burgers_db
-GO
+
 -- drop any prior database
 DROP DATABASE IF EXISTS burgers_db;
 
