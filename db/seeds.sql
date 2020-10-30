@@ -1,4 +1,6 @@
 INSERT INTO burgers
     (burger_name)
 VALUES
-    ('big cheese', true);
+    ('big cheese'),
+    ("quarter pounder"),
+    ("cheeseburger");
