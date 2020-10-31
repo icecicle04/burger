@@ -1,19 +1,21 @@
 <h1>Mmmmm Burgers!</h1>
 
-<h2>Burgers that have not been devoured yet!</h2>
+<h2>Burgers that have been devoured!</h2>
 
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    {{> burgers/burger-block devoured=false}}
+    {{> burgers/burger-block devoured=true}}
     {{/unless}}
     {{/each}}
 </ul>
 
+<h2>Burgers that have NOT been devoured yet!</h2>
+
 <ul>
     {{#each burgers}}
     {{#if devoured}}
-    {{> burgers/burger-block devoured=true}}
+    {{> burgers/burger-block devoured=false}}
     {{/if}}
     {{/each}}
 </ul>
