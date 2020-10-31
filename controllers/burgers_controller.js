@@ -8,11 +8,11 @@ var burger = require("../models/burger.js");
 //routes and logic
 router.get("/", function (req, res) {
   burger.all(function (data) {
-    var hasObject = {
+    var hbsObject = {
       burgers: data,
     };
-    console.log(hasObject);
-    res.render("index", hasObject);
+    console.log(hbsObject);
+    res.render("index", hbsObject);
   });
 });
 
