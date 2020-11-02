@@ -1,4 +1,7 @@
 const express = require("express");
+const logger = require("morgan");
+const mongoose = require("mongoose");
+
 require("dotenv").config();
 
 let PORT = process.env.PORT || 8080;
@@ -12,6 +15,10 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/burger-app", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+});
 // Set Handlebars.
 const exphbs = require("express-handlebars");
 
