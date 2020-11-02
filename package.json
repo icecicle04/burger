@@ -2,9 +2,10 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "Lets the user pick a burger that they want to eat and then renders the burger for them to eat.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
