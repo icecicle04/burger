@@ -1,4 +1,5 @@
 // set up connection
+const { connection } = require("mongoose");
 const mysql = require("mysql");
 
 if (process.env.JAWSDB_URL) {
@@ -22,6 +23,8 @@ connection.connect(function (err) {
   }
   console.log("connected as id " + connection.threadId);
 });
+
+connection.end();
 
 // Export connection for our ORM to use
 module.exports = connection;
