@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
 require("dotenv").config();
 
@@ -14,14 +14,14 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-    "mongodb+srv://burgeruser:burgeruser@cluster0.odyun.mongodb.net/burger-app?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-  }
-);
+// mongoose.connect(
+//   process.env.MONGODB_URI ||
+//     "mongodb+srv://burgeruser:burgeruser@cluster0.odyun.mongodb.net/burger-app?retryWrites=true&w=majority",
+//   {
+//     useNewUrlParser: true,
+//     useFindAndModify: false,
+//   }
+// );
 // Set Handlebars.
 const exphbs = require("express-handlebars");
 
