@@ -32,6 +32,7 @@ function objToSql(ob) {
       arr.push(key + "=" + value);
     }
   }
+  //updated db
 
   // translate array of strings to a single comma-separated string
   return arr.toString();
