@@ -15,7 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/burger-app-ak",
+  process.env.MONGODB_URI ||
+    "mongodb+srv://burgeruser:burgeruser@cluster0.odyun.mongodb.net/burger-app?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useFindAndModify: false,
