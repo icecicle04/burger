@@ -1,5 +1,5 @@
 // set up connection
-const { connection } = require("mongoose");
+// const { connection } = require("mongoose");
 const mysql = require("mysql");
 
 if (process.env.JAWSDB_URL) {
